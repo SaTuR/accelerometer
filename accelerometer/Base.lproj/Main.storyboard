@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="accelerometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-1L-3pf">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56326396889999997" blue="0.91466922989999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCP-4c-Q7T">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.28291556680000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uvu-Ez-2EG"/>
+                                </constraints>
+                                <state key="normal" title="Vertical">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="vertical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7s-xF-mr7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAu-RS-yZd">
+                                <rect key="frame" x="0.0" y="567" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.11581165140000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f3x-Zs-afw"/>
+                                </constraints>
+                                <state key="normal" title="Horizontal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="horizontal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mwN-uA-KCP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yCP-4c-Q7T" secondAttribute="bottom" id="4fa-Ij-JDw"/>
+                            <constraint firstItem="yCP-4c-Q7T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Erp-fh-IhR"/>
+                            <constraint firstItem="yCP-4c-Q7T" firstAttribute="top" secondItem="kAu-RS-yZd" secondAttribute="bottom" id="FaO-nk-CPE"/>
+                            <constraint firstItem="kAu-RS-yZd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FxQ-CQ-yNk"/>
+                            <constraint firstAttribute="trailing" secondItem="yCP-4c-Q7T" secondAttribute="trailing" id="ZhJ-2r-7zq"/>
+                            <constraint firstAttribute="trailing" secondItem="kAu-RS-yZd" secondAttribute="trailing" id="rxJ-TA-OMg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movableView" destination="mgc-1L-3pf" id="SbZ-2J-DnP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
